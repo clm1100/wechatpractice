@@ -5,7 +5,7 @@
 
 2、打开微信公众平台测试号
 
-3、打开ngrok,生成域名
+3、打开ngrok,生成域名 `./sunny.exe clientid 0b0a59d1e38d4a76`
 
 4、修改代码配置中的域名
 

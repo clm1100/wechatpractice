@@ -6,5 +6,7 @@ module.exports = {
 		encodingAESKey: '',
 		checkSignature: true
 	},
-	domain:'490425bc.ngrok.io'
+	domain:'wx.nodejsvue.cn'
 }
+// http://clm1100.free.ngrok.cc/
+// http://wx.nodejsvue.cn

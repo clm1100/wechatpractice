@@ -41,13 +41,12 @@ router.get('/infocb', function(req, res) {
 router.get('/basecb', function(req, res) {
 	var code = req.query.code;
 	client.getAccessToken(code, function(err, result) {
-		var accessToken = result.data.access_token;
-		var openid = result.data.openid;
-
-		res.send({
-			accessToken: accessToken,
-			openid: openid,
-		});
+		
+		if(!err){
+			res.send(result);
+		}else{
+			res.send("报错了");
+		}
 	});
 
 })

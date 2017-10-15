@@ -8,10 +8,11 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var wxoauth = require('./routes/wxoauth');
 var wxreply = require('./routes/wxreply');
+var ticket = require('./routes/ticket');
 
 
 var app = express();
-
+require('./models/orm.js');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/reply', wxreply);
 app.use('/oauth', wxoauth);
+app.use('/wxt',ticket);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

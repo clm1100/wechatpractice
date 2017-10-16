@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "~1.16.0",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^1.0.0",
@@ -17,6 +18,7 @@
     "express-formidable": "^1.0.0",
     "express-session": "^1.15.3",
     "formidable": "^1.1.1",
+    "jssha": "^2.3.1",
     "mongoose": "^4.9.9",
     "mongoosedao": "^1.0.13",
     "morgan": "~1.7.0",
